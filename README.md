@@ -1,7 +1,7 @@
 Ghost - Docker
 ==============
 
-Run Ghost with Docker.
+Run [Ghost][] with [Docker][].
 
 Basic Usage
 -----------
@@ -97,6 +97,8 @@ is 1.9, use ```software-1.9``` instead of ```software-latest```. This way, the
 Docker images are immune to unexpected new releases (```software-latest``` shifting
 from ```software-1.9``` to ```software-2.0```...).
 
+[Ghost]: https://ghost.org/
+[Docker]: https://www.docker.com/
 [OfficialNodeImage]: https://registry.hub.docker.com/_/node/
 [DockerfileGhost]: https://dockerfile.github.io/#/ghost
 [DockerfileProject]: https://dockerfile.github.io

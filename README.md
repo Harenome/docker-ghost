@@ -22,6 +22,15 @@ The startup script will check whether the following files or directories exist:
 The existing files and directories will be used, otherwise, Ghost will fallback
 to the default paths.
 
+#### Note for SELinux users
+
+If your distribution runs SELinux, you may need to use the following command in
+order to mount volumes in your docker images:
+
+```bash
+$ chcon -Rt svirt_sandbow_file_t <your_directory>
+```
+
 #### Recommended way
 
 Assuming ```your_directory_of_choice``` contains:
@@ -36,6 +45,19 @@ Assuming ```your_directory_of_choice``` contains:
 $ cd <your_directory_of_choice>
 $ docker run -i -t -v $(pwd):/data -p 2368:2368 ghost
 ```
+
+#### Example
+
+```bash
+$ cd example
+$ docker run -i -t -v $(pwd):/data -p 2368:2368 ghost
+```
+
+To clean the example:
+```bash
+$ git reset --hard && git clean -f
+```
+
 
 #### Separate locations
 It is also possible to only mount specific files or directories. For instance:

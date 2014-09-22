@@ -10,7 +10,7 @@ FROM node:0.10.31
 RUN apt-get update && apt-get install -y wget unzip
 
 # Download and unpack Ghost v0.5.1, perform installation steps.
-RUN wget https://ghost.org/zip/ghost-0.5.0.zip -O /tmp/ghost.zip \
+RUN wget https://ghost.org/zip/ghost-0.5.1.zip -O /tmp/ghost.zip \
     && unzip /tmp/ghost.zip -d /opt/ghost \
     && rm /tmp/ghost.zip \
     && cd /opt/ghost \
@@ -22,7 +22,7 @@ WORKDIR /opt/ghost
 
 # Set environment variables.
 ENV NODE_ENV production
-ENV GHOST_VERSION 0.5.0
+ENV GHOST_VERSION 0.5.1
 
 # Expose default port.
 EXPOSE 2368

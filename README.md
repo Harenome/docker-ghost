@@ -1,14 +1,14 @@
 Ghost - Docker
 ==============
 
-Run [Ghost][] 0.5.0 with [Docker][].
+Run [Ghost][] 0.5.1 with [Docker][].
 
 Basic Usage
 -----------
 
 ```bash
-$ docker pull harenome/ghost:0.5.0
-$ docker run -i -t -p 2398:2368 ghost:0.5.0
+$ docker pull harenome/ghost:0.5.1
+$ docker run -i -t -p 2398:2368 ghost:0.5.1
 ```
 
 ### Custom config, persistent data
@@ -44,14 +44,14 @@ Assuming ```your_directory_of_choice``` contains:
 
 ```bash
 $ cd <your_directory_of_choice>
-$ docker run -i -t -v $(pwd):/data -p 2368:2368 ghost:0.5.0
+$ docker run -i -t -v $(pwd):/data -p 2368:2368 ghost:0.5.1
 ```
 
 #### Example
 
 ```bash
 $ cd example
-$ docker run -i -t -v $(pwd):/data -p 2368:2368 ghost:0.5.0
+$ docker run -i -t -v $(pwd):/data -p 2368:2368 ghost:0.5.1
 ```
 
 To clean the example:
@@ -64,8 +64,8 @@ $ git reset --hard && git clean -f
 It is also possible to only mount specific files or directories. For instance:
 
 ```bash
-$ docker run -i -t -v <your_config>:/data/config.js -p 2368:2368 ghost:0.5.0
-$ docker run -i -t -v <your_config>:/data/config.js <your_data>:/data/content/data -p 2368:2368 ghost:0.5.0
+$ docker run -i -t -v <your_config>:/data/config.js -p 2368:2368 ghost:0.5.1
+$ docker run -i -t -v <your_config>:/data/config.js <your_data>:/data/content/data -p 2368:2368 ghost:0.5.1
 ```
 
 Docker Stuff

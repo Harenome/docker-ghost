@@ -81,7 +81,7 @@ Docker Stuff
 - ```/data```
 
 ### Tags
-The ```master``` branch is for ```latest```. Checkout the appropriate branch if
+The ```latest``` branch is for ```latest```. Checkout the appropriate branch if
 you are looking for the Dockerfile for a specific version of Ghost.
 
 Why not use [DockerfileGhost](dockerfile/ghost)?

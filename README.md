@@ -1,7 +1,7 @@
 Ghost - Docker
 ==============
 
-Run [Ghost][] with [Docker][].
+Run [Ghost][] 0.5.0 with [Docker][].
 
 Basic Usage
 -----------

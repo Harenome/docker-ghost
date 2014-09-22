@@ -67,6 +67,23 @@ $ docker run -i -t -v <your_config>:/data/config.js -p 2368:2368 ghost
 $ docker run -i -t -v <your_config>:/data/config.js <your_data>:/data/content/data -p 2368:2368 ghost
 ```
 
+Docker Stuff
+------------
+### Environment variables
+- ```NODE_ENV```
+- ```NODE_VERSION``` (inherited from the [OfficialNodeImage](official Node.js build))
+- ```GHOST_VERSION```
+
+### Ports
+- ```2368```
+
+### Volumes
+- ```/data```
+
+### Tags
+The ```master``` branch is for ```latest```. Checkout the appropriate branch if
+you are looking for the Dockerfile for a specific version of Ghost.
+
 Why not use [DockerfileGhost](dockerfile/ghost)?
 ------------------------------------------------
 
@@ -79,5 +96,6 @@ is 1.9, use ```software-1.9``` instead of ```software-latest```. This way, the
 Docker images are immune to unexpected new releases (```software-latest``` shifting
 from ```software-1.9``` to ```software-2.0```...).
 
+[OfficialNodeImage]: https://registry.hub.docker.com/_/node/
 [DockerfileGhost]: https://dockerfile.github.io/#/ghost
 [DockerfileProject]: https://dockerfile.github.io
